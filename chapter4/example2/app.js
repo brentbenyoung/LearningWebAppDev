@@ -23,6 +23,11 @@ var main = function () {
             addCommentFromInputBox();
         }
     });
+
+    $("footer p").fadeOut(3000, function() {
+        //the following will remove the p element after it's faded out
+        $("footer p").remove();
+    });
 };
 
 $(document).ready(main);
